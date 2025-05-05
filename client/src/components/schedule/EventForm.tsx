@@ -214,7 +214,7 @@ const EventForm = ({ event = null, onSubmit, onCancel }) => {
               </FormLabel>
               <FormControl>
                 <Input 
-                  placeholder="Jamie, Casey, Taylor" 
+                  placeholder="Roommate A, Isabel, Conrad" 
                   value={Array.isArray(field.value) ? field.value.join(', ') : field.value}
                   onChange={(e) => field.onChange(e.target.value)}
                   className="border-[#7A8450] focus:ring-[#7A8450]" 

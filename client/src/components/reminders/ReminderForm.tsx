@@ -49,7 +49,7 @@ const ReminderForm = ({ onSubmit, onCancel, initialData = null }) => {
     defaultValues: initialData || {
       userId: 1, // Hardcoded for demo
       text: '',
-      fromUser: 'Jamie', // Hardcoded for demo
+      fromUser: 'Roommate A', // Hardcoded for demo
       priority: 'medium',
       completed: false
     },

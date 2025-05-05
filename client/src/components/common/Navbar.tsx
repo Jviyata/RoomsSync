@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: 'Schedule', href: '/schedule', icon: Calendar },
     { name: 'Reminders', href: '/reminders', icon: Bell },
     { name: 'Guests', href: '/guests', icon: Users },
-    { name: 'Profile', href: '/profile', icon: Settings },
+    // Profile page removed per user request
   ];
 
   const isActive = (path: string) => {

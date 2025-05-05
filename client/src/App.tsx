@@ -10,7 +10,7 @@ import Dashboard from "@/pages/Dashboard";
 import Schedule from "@/pages/Schedule";
 import Reminders from "@/pages/Reminders";
 import Guests from "@/pages/Guests";
-import Profile from "@/pages/Profile";
+// Profile page removed per user request
 
 function Router() {
   return (
@@ -20,7 +20,7 @@ function Router() {
       <Route path="/schedule" component={Schedule} />
       <Route path="/reminders" component={Reminders} />
       <Route path="/guests" component={Guests} />
-      <Route path="/profile" component={Profile} />
+      {/* Profile page route removed per user request */}
       <Route component={NotFound} />
     </Switch>
   );
