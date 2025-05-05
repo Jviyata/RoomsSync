@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Bell, Calendar, Home, Menu, Users, X } from 'lucide-react';
 import { Link, useLocation } from 'wouter';
+import RoomhubIcon from '../icons/RoomhubIcon';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
       {/* App Logo - Top */}
       <Link href="/dashboard">
         <a className="mb-8 p-3 rounded-full bg-[#7A8450] shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center">
-          <div className="text-white font-bold text-lg">RH</div>
+          <RoomhubIcon className="text-white" size={26} />
         </a>
       </Link>
       
@@ -45,7 +46,7 @@ const Navbar = () => {
       
       {/* User Profile - Bottom */}
       <div className="mt-8 p-3 rounded-full bg-[#7A8450] shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center">
-        <div className="h-5 w-5 text-white flex items-center justify-center">
+        <div className="text-white flex items-center justify-center">
           RA
         </div>
       </div>
@@ -69,6 +70,12 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="fixed inset-0 bg-[#7A8450] bg-opacity-90 z-40 md:hidden flex items-center justify-center">
           <div className="flex flex-col items-center space-y-8 p-6 rounded-lg">
+            {/* App Logo at top of mobile menu */}
+            <div className="mb-4">
+              <RoomhubIcon className="text-white" size={40} />
+              <h2 className="text-white text-xl font-bold mt-2 text-center">RoomHub</h2>
+            </div>
+            
             {navigationItems.map((item) => (
               <Link
                 key={item.name}
