@@ -102,10 +102,10 @@ export class MemStorage implements IStorage {
       date: today,
       startTime: "06:00",
       endTime: "06:30",
-      description: "Conrad's shower time",
+      description: "Roommate A's shower time",
       isAllDay: false,
       color: "#7A8450",
-      attendees: ["Conrad Fisher"]
+      attendees: ["Roommate A"]
     });
     
     this.createEvent({
@@ -151,7 +151,7 @@ export class MemStorage implements IStorage {
     this.createReminder({
       userId: 1,
       text: "Don't forget to take the bins out tonight!",
-      fromUser: "Conrad Fisher",
+      fromUser: "Isabel \"Belly\" Conklin",
       priority: "high",
       completed: false
     });
@@ -176,7 +176,7 @@ export class MemStorage implements IStorage {
     this.createGuest({
       userId: 1,
       name: "Jeremiah Fisher",
-      relationship: "Friend",
+      relationship: "Visitor",
       visitDate: today,
       visitTime: "19:00",
       visitEndTime: "22:00",
@@ -193,7 +193,7 @@ export class MemStorage implements IStorage {
     this.createGuest({
       userId: 1,
       name: "Steven Conklin",
-      relationship: "Roommate's sibling",
+      relationship: "Visitor",
       visitDate: tomorrowString,
       visitTime: "14:00",
       visitEndTime: "18:00",
@@ -209,8 +209,8 @@ export class MemStorage implements IStorage {
     
     this.createGuest({
       userId: 1,
-      name: "Isabel \"Belly\" Conklin",
-      relationship: "Study group",
+      name: "Conrad Fisher",
+      relationship: "Visitor",
       visitDate: weekendString,
       visitTime: "15:00",
       visitEndTime: "19:00",
