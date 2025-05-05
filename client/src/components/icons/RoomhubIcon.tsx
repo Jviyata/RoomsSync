@@ -25,11 +25,12 @@ const RoomhubIcon: React.FC<RoomhubIconProps> = ({ className = '', size = 24 }) 
       {/* Door */}
       <path d="M9 22V12h6v10" />
       
-      {/* Window */}
-      <path d="M14 7h.01" />
-      
-      {/* Circular element representing people/community */}
-      <circle cx="12" cy="7" r="2" />
+      {/* Heart inside the house */}
+      <path 
+        d="M12 15l-2-2c-0.8-0.8-0.8-2 0-2.8s2-0.8 2.8 0l0.2 0.2 0.2-0.2c0.8-0.8 2-0.8 2.8 0s0.8 2 0 2.8L12 15z" 
+        strokeWidth="1.5" 
+        fill="currentColor"
+      />
     </svg>
   );
 };
