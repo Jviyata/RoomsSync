@@ -16,4 +16,4 @@ RoomHub is a collaborative living platform designed to simplify roommate interac
 
 Visit RoomHub: [https://room-share-sync-viyatarutasart.replit.app/](https://room-share-sync-viyatarutasart.replit.app/)
 
-Built with React, TypeScript, Tailwind CSS, and Shadcn UI.
+Built with React, TypeScript, Tailwind CSS
