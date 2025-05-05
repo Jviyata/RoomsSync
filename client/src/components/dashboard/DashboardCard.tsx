@@ -13,13 +13,13 @@ const DashboardCard = ({
   
   // Determine color based on change type
   const getChangeColor = () => {
-    if (changeType === 'positive') return 'text-[#7A8450]';
+    if (changeType === 'positive') return 'text-gray-700';
     if (changeType === 'negative') return 'text-red-600';
     return 'text-black';
   };
   
   return (
-    <div className="bg-white rounded-lg shadow p-6 hover:shadow-md transition-shadow border border-[#DCCCA3]">
+    <div className="bg-white rounded-lg shadow p-6 hover:shadow-md transition-shadow border border-gray-200">
       <div className="flex justify-between items-start">
         <div>
           <p className="text-sm font-medium text-black">{title}</p>
@@ -37,8 +37,8 @@ const DashboardCard = ({
         </div>
         
         {Icon && (
-          <div className="bg-[#FAF3E0] p-3 rounded-full">
-            <Icon className="h-6 w-6 text-[#7A8450]" />
+          <div className="bg-gray-100 p-3 rounded-full">
+            <Icon className="h-6 w-6 text-black" />
           </div>
         )}
       </div>
@@ -47,7 +47,7 @@ const DashboardCard = ({
         <div className="mt-4">
           <button
             onClick={() => setExpanded(!expanded)}
-            className="text-sm text-[#7A8450] hover:text-[#556B2F] flex items-center"
+            className="text-sm text-gray-700 hover:text-black flex items-center"
           >
             {expanded ? 'View less' : 'View details'}
             {expanded ? 
@@ -56,7 +56,7 @@ const DashboardCard = ({
             }
           </button>
           
-          {expanded && <div className="mt-3 border-t border-[#DCCCA3] pt-3">{children}</div>}
+          {expanded && <div className="mt-3 border-t border-gray-200 pt-3">{children}</div>}
         </div>
       )}
     </div>

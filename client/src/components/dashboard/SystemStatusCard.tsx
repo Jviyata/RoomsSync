@@ -3,8 +3,8 @@ import { CheckCircle, AlertTriangle, XCircle, Clock, InfoIcon } from 'lucide-rea
 const statusConfig = {
   operational: {
     icon: CheckCircle,
-    color: 'text-[#7A8450]',
-    bgColor: 'bg-[#FAF3E0]',
+    color: 'text-gray-700',
+    bgColor: 'bg-gray-100',
     label: 'Operational'
   },
   degraded: {
@@ -21,20 +21,20 @@ const statusConfig = {
   },
   maintenance: {
     icon: Clock,
-    color: 'text-[#556B2F]',
-    bgColor: 'bg-[#DCCCA3]',
+    color: 'text-black',
+    bgColor: 'bg-gray-200',
     label: 'Scheduled Maintenance'
   },
   unknown: {
     icon: InfoIcon,
     color: 'text-black',
-    bgColor: 'bg-[#FAF3E0]',
+    bgColor: 'bg-gray-100',
     label: 'Unknown'
   },
   locked: {
     icon: CheckCircle,
-    color: 'text-[#7A8450]',
-    bgColor: 'bg-[#FAF3E0]',
+    color: 'text-gray-700',
+    bgColor: 'bg-gray-100',
     label: 'Locked'
   },
   unlocked: {
@@ -75,7 +75,7 @@ const SystemStatusCard = ({
   
   return (
     <div 
-      className={`p-4 rounded-lg border border-[#DCCCA3] mb-4 ${onClick ? 'cursor-pointer hover:shadow-md' : ''}`}
+      className={`p-4 rounded-lg border border-gray-200 mb-4 ${onClick ? 'cursor-pointer hover:shadow-md' : ''}`}
       onClick={onClick}
     >
       <div className="flex items-center justify-between">
