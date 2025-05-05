@@ -19,11 +19,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed right-0 top-0 bottom-0 z-50 flex flex-col items-center justify-center space-y-6 p-4 bg-[#FAF3E0] bg-opacity-90 shadow-lg">
+    <div className="fixed right-0 top-0 bottom-0 z-50 flex flex-col items-center justify-center space-y-6 p-4 bg-[#f5f5dc] bg-opacity-90 shadow-lg">
       {/* App Logo - Top */}
       <Link href="/dashboard">
-        <a className="mb-8 p-3 rounded-full bg-[#7A8450] shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center">
-          <RoomhubIcon className="text-white" size={26} />
+        <a className="mb-8 p-3 rounded-full bg-black shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center">
+          <RoomhubIcon className="text-[#f5f5dc]" size={26} />
         </a>
       </Link>
       
@@ -33,8 +33,8 @@ const Navbar = () => {
           <a 
             className={`p-3 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-200 ${
               isActive(item.href) 
-                ? 'bg-[#7A8450] text-white' 
-                : 'bg-white text-[#7A8450] hover:bg-[#DCCCA3] hover:text-[#556B2F]'
+                ? 'bg-black text-[#f5f5dc]' 
+                : 'bg-white text-black hover:bg-[#e5e5d0] hover:text-[#333333]'
             }`}
             title={item.name}
           >
@@ -45,8 +45,8 @@ const Navbar = () => {
       ))}
       
       {/* User Profile - Bottom */}
-      <div className="mt-8 p-3 rounded-full bg-[#7A8450] shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center">
-        <div className="text-white flex items-center justify-center">
+      <div className="mt-8 p-3 rounded-full bg-black shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center">
+        <div className="text-[#f5f5dc] flex items-center justify-center">
           RA
         </div>
       </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
       <div className="fixed top-4 right-4 md:hidden">
         <button
           type="button"
-          className="p-2 rounded-full bg-white shadow-md text-[#7A8450] hover:bg-[#DCCCA3] focus:outline-none focus:ring-2 focus:ring-[#7A8450]"
+          className="p-2 rounded-full bg-white shadow-md text-black hover:bg-[#e5e5d0] focus:outline-none focus:ring-2 focus:ring-black"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (
@@ -68,12 +68,12 @@ const Navbar = () => {
 
       {/* Mobile menu overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 bg-[#7A8450] bg-opacity-90 z-40 md:hidden flex items-center justify-center">
+        <div className="fixed inset-0 bg-black bg-opacity-90 z-40 md:hidden flex items-center justify-center">
           <div className="flex flex-col items-center space-y-8 p-6 rounded-lg">
             {/* App Logo at top of mobile menu */}
             <div className="mb-4">
-              <RoomhubIcon className="text-white" size={40} />
-              <h2 className="text-white text-xl font-bold mt-2 text-center">RoomHub</h2>
+              <RoomhubIcon className="text-[#f5f5dc]" size={40} />
+              <h2 className="text-[#f5f5dc] text-xl font-bold mt-2 text-center">RoomHub</h2>
             </div>
             
             {navigationItems.map((item) => (
@@ -82,7 +82,7 @@ const Navbar = () => {
                 href={item.href}
               >
                 <a 
-                  className="flex flex-col items-center justify-center p-4 rounded-full bg-white text-[#7A8450] shadow-lg hover:bg-[#DCCCA3] transition-colors duration-200"
+                  className="flex flex-col items-center justify-center p-4 rounded-full bg-white text-black shadow-lg hover:bg-[#e5e5d0] transition-colors duration-200"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <item.icon className="h-8 w-8 mb-2" />
