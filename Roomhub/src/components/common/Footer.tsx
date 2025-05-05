@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <h2 className="text-xl font-bold">RoomHub</h2>
+            <h2 className="text-xl font-bold">RoomSync</h2>
             <p className="mt-2 text-[#FAF3E0] text-sm">
               Shared living made simple
             </p>
@@ -39,7 +39,7 @@ const Footer = () => {
               <ul className="mt-4 space-y-2">
                 <li className="flex items-center">
                   <Mail className="h-5 w-5 mr-2 text-[#DCCCA3]" />
-                  <span className="text-[#FAF3E0]">support@roomhub.com</span>
+                  <span className="text-[#FAF3E0]">support@roomsync.com</span>
                 </li>
               </ul>
             </div>
@@ -48,7 +48,7 @@ const Footer = () => {
         
         <div className="mt-8 border-t border-[#7A8450] pt-4 md:flex md:items-center md:justify-between">
           <p className="text-sm text-[#FAF3E0]">
-            © {currentYear} RoomHub, Inc. All rights reserved.
+            © {currentYear} RoomSync, Inc. All rights reserved.
           </p>
         </div>
       </div>

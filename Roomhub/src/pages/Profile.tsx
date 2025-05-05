@@ -172,7 +172,7 @@ const Profile = () => {
               <Card>
                 <CardHeader>
                   <CardTitle>Activity Statistics</CardTitle>
-                  <CardDescription>Your usage and activity on RoomHub</CardDescription>
+                  <CardDescription>Your usage and activity on RoomSync</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-2 gap-4">

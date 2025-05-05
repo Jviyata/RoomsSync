@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
               <Link href="/dashboard">
-                <a className="text-xl font-bold text-[#7A8450]">RoomHub</a>
+                <a className="text-xl font-bold text-[#7A8450]">RoomSync</a>
               </Link>
             </div>
             
