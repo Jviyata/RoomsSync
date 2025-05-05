@@ -30,12 +30,16 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <div className="flex flex-col min-h-screen">
+        <div className="flex min-h-screen">
+          {/* Main content with padding for the side navbar */}
+          <div className="flex flex-col flex-grow pr-20"> {/* Added right padding for the navbar */}
+            <main className="flex-grow">
+              <Router />
+            </main>
+            <Footer />
+          </div>
+          {/* Side navbar */}
           <Navbar />
-          <main className="flex-grow">
-            <Router />
-          </main>
-          <Footer />
         </div>
         <Toaster />
       </TooltipProvider>
