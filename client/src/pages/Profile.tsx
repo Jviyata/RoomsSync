@@ -22,8 +22,8 @@ const Profile = () => {
       return {
         id: 1,
         username: 'demouser',
-        displayName: 'Jamie',
-        email: 'jamie@example.com',
+        displayName: 'Roommate A',
+        email: 'roommate.a@example.com',
         preferences: {
           preferredTimes: {
             kitchen: ['morning', 'evening'],

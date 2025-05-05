@@ -72,7 +72,7 @@ const Navbar = () => {
                 <button className="max-w-xs bg-[#7A8450] rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#556B2F]">
                   <span className="sr-only">Open user menu</span>
                   <div className="h-8 w-8 rounded-full bg-[#7A8450] flex items-center justify-center text-white">
-                    JD
+                    RA
                   </div>
                 </button>
               </div>

@@ -73,8 +73,8 @@ export class MemStorage implements IStorage {
     this.createUser({
       username: "demouser",
       password: "password123",
-      displayName: "Jamie",
-      email: "jamie@example.com",
+      displayName: "Roommate A",
+      email: "roommate.a@example.com",
       preferences: {}
     });
     
@@ -102,10 +102,10 @@ export class MemStorage implements IStorage {
       date: today,
       startTime: "06:00",
       endTime: "06:30",
-      description: "Taylor's shower time",
+      description: "Conrad's shower time",
       isAllDay: false,
       color: "#7A8450",
-      attendees: ["Taylor"]
+      attendees: ["Conrad Fisher"]
     });
     
     this.createEvent({
@@ -115,10 +115,10 @@ export class MemStorage implements IStorage {
       date: today,
       startTime: "12:30",
       endTime: "13:30",
-      description: "Jamie's lunch preparation",
+      description: "Roommate A's lunch preparation",
       isAllDay: false,
       color: "#7A8450",
-      attendees: ["Jamie"]
+      attendees: ["Roommate A"]
     });
     
     this.createEvent({
@@ -128,10 +128,10 @@ export class MemStorage implements IStorage {
       date: today,
       startTime: "18:00",
       endTime: "19:30",
-      description: "Casey's dinner preparation",
+      description: "Isabel's dinner preparation",
       isAllDay: false,
       color: "#7A8450",
-      attendees: ["Casey"]
+      attendees: ["Isabel \"Belly\" Conklin"]
     });
     
     this.createEvent({
@@ -151,7 +151,7 @@ export class MemStorage implements IStorage {
     this.createReminder({
       userId: 1,
       text: "Don't forget to take the bins out tonight!",
-      fromUser: "Taylor",
+      fromUser: "Conrad Fisher",
       priority: "high",
       completed: false
     });
@@ -159,7 +159,7 @@ export class MemStorage implements IStorage {
     this.createReminder({
       userId: 1,
       text: "It's your turn this week according to the schedule.",
-      fromUser: "Casey",
+      fromUser: "Isabel \"Belly\" Conklin",
       priority: "medium",
       completed: false
     });
@@ -167,7 +167,7 @@ export class MemStorage implements IStorage {
     this.createReminder({
       userId: 1,
       text: "Let's clean out old food this weekend.",
-      fromUser: "Jamie",
+      fromUser: "Roommate A",
       priority: "low",
       completed: false
     });
@@ -175,7 +175,7 @@ export class MemStorage implements IStorage {
     // Demo guests
     this.createGuest({
       userId: 1,
-      name: "Alex Smith",
+      name: "Jeremiah Fisher",
       relationship: "Friend",
       visitDate: today,
       visitTime: "19:00",
@@ -192,7 +192,7 @@ export class MemStorage implements IStorage {
     
     this.createGuest({
       userId: 1,
-      name: "Morgan Lee",
+      name: "Steven Conklin",
       relationship: "Roommate's sibling",
       visitDate: tomorrowString,
       visitTime: "14:00",
@@ -209,7 +209,7 @@ export class MemStorage implements IStorage {
     
     this.createGuest({
       userId: 1,
-      name: "Jordan Riley",
+      name: "Isabel \"Belly\" Conklin",
       relationship: "Study group",
       visitDate: weekendString,
       visitTime: "15:00",
